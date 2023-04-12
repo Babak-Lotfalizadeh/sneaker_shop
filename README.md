@@ -1,16 +1,11 @@
-# sneaker_shop
+# Sneaker Shop
 
 Flutter Sneaker Shop
 
 ## Getting Started
+lorem epson
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ToDo
+because of limitation on importing library we did not use some of library that we think make sense to have in all kind of applications.
+for example normally we used intl for localization, using json_serializable for creating view models, ETC</br>  
+we can add them when its necessary</br>

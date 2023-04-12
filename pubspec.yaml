@@ -9,6 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +18,44 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: josefin
+      fonts:
+        - asset: assets/fonts/josefin_sans/JosefinSans-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/josefin_sans/JosefinSans-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/josefin_sans/JosefinSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/josefin_sans/JosefinSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/josefin_sans/JosefinSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/josefin_sans/JosefinSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/josefin_sans/JosefinSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/josefin_sans/JosefinSans-ThinItalic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/josefin_sans/JosefinSans-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/josefin_sans/JosefinSans-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/josefin_sans/JosefinSans-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/josefin_sans/JosefinSans-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/josefin_sans/JosefinSans-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/josefin_sans/JosefinSans-BoldItalic.ttf
+          weight: 700
+          style: italic
