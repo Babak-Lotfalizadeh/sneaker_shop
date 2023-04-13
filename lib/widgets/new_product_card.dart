@@ -30,7 +30,10 @@ class NewProductCard extends StatelessWidget {
               Column(
                 children: [
                   Expanded(
-                    child: ProductImage(image: productModel.image),
+                    child: ProductImage(
+                      image: productModel.image,
+                      tag: "${productModel.image}New",
+                    ),
                   ),
                   Text(productModel.name ?? ""),
                   const SizedBox(

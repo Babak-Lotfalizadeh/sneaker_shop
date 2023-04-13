@@ -49,7 +49,7 @@ class DiscoverContentWidget extends StatelessWidget {
           body: TabBarView(
             physics: const NeverScrollableScrollPhysics(),
             children: discoverProvider.brands
-                .map((e) => BrandProductsWidget(products: e.products))
+                .map((e) => BrandProductsWidget(brandModel: e))
                 .toList(),
           ),
         ),

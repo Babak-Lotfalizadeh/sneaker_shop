@@ -7,43 +7,43 @@ class ProductService {
   [
     {
       "id":1,"name":"Nike" ,"products": [
-        {"id":101,"name": "EPIC-REACT","price":130.00,"isNew":false, "image":"sneaker_01"},
-        {"id":102,"name": "AIR-MAX","price":130.00,"isNew":false, "image":"sneaker_02"},
-        {"id":103,"name": "AIR-270","price":150.00,"isNew":false, "image":"sneaker_03"},
-        {"id":104,"name": "AIR-FORCE","price":130.00,"isNew":true, "image":"sneaker_04"},
-        {"id":105,"name": "Phantom GX Pro FG","price":170.00,"isNew":true, "image":"sneaker_01"}
+        {"id":101,"color":"0xff4EC7DE", "name": "EPIC-REACT","price":130.00,"isNew":false, "image":"sneaker_01"},
+        {"id":102,"color":"0xff2A2448", "name": "AIR-MAX","price":130.00,"isNew":false, "image":"sneaker_02"},
+        {"id":103,"color":"0xff262D30", "name": "AIR-270","price":150.00,"isNew":false, "image":"sneaker_03"},
+        {"id":104,"color":"0xff3A57B1", "name": "AIR-FORCE","price":130.00,"isNew":true, "image":"sneaker_04"},
+        {"id":105,"color":"0xff4EC7DE", "name": "Phantom GX Pro FG","price":170.00,"isNew":true, "image":"sneaker_01"}
       ]
     },
  
     {
       "id":2,"name":"Adidas" ,"products": [
-        {"id":201,"name": "EQ19","price":130.00,"isNew":false, "image":"sneaker_01"},
-        {"id":202,"name": "LIGHT SHOES","price":130.00,"isNew":true, "image":"sneaker_02"},
-        {"id":203,"name": "SUPERSTAR SHOES","price":130.00,"isNew":true, "image":"sneaker_03"}
+        {"id":201,"color":"0xff4EC7DE", "name": "EQ19","price":130.00,"isNew":false, "image":"sneaker_01"},
+        {"id":202,"color":"0xff2A2448", "name": "LIGHT SHOES","price":130.00,"isNew":true, "image":"sneaker_02"},
+        {"id":203,"color":"0xff262D30", "name": "SUPERSTAR SHOES","price":130.00,"isNew":true, "image":"sneaker_03"}
     ]
     },
  
     { 
       "id":3,"name":"Jordan" ,"products": [
-        {"id":301,"name": "Jordan 1","price":130.00,"isNew":false, "image":"sneaker_01"},
-        {"id":302,"name": "Jordan 2","price":130.00,"isNew":true, "image":"sneaker_02"},
-        {"id":303,"name": "Jordan 3","price":130.00,"isNew":true, "image":"sneaker_03"}
+        {"id":301, "color":"0xff4EC7DE", "name": "Jordan 1","price":130.00,"isNew":false, "image":"sneaker_01"},
+        {"id":302, "color":"0xff2A2448", "name": "Jordan 2","price":130.00,"isNew":true, "image":"sneaker_02"},
+        {"id":303, "color":"0xff262D30", "name": "Jordan 3","price":130.00,"isNew":true, "image":"sneaker_03"}
     ] 
     },
   
   
     {
       "id":4,"name":"Puma" ,"products": [
-        {"id":401,"name": "Puma 1","price":130.00,"isNew":false, "image":"sneaker_01"},
-        {"id":402,"name": "Puma 2","price":130.00,"isNew":true, "image":"sneaker_02"},
-        {"id":403,"name": "Puma 3","price":130.00,"isNew":true, "image":"sneaker_03"}
+        {"id":401, "color":"0xff4EC7DE", "name": "Puma 1","price":130.00,"isNew":false, "image":"sneaker_01"},
+        {"id":402, "color":"0xff2A2448", "name": "Puma 2","price":130.00,"isNew":true, "image":"sneaker_02"},
+        {"id":403, "color":"0xff262D30", "name": "Puma 3","price":130.00,"isNew":true, "image":"sneaker_03"}
       ]
     },
     {
       "id":5,"name":"Skecher" ,"products": [
-        {"id":501,"name": "Skecher 1","price":130.00,"isNew":false, "image":"sneaker_01"},
-        {"id":502,"name": "Skecher 2","price":130.00,"isNew":true, "image":"sneaker_02"},
-        {"id":503,"name": "Skecher 3","price":130.00,"isNew":true, "image":"sneaker_03"}
+        {"id":501, "color":"0xff4EC7DE", "name": "Skecher 1","price":130.00,"isNew":false, "image":"sneaker_01"},
+        {"id":502, "color":"0xff2A2448", "name": "Skecher 2","price":130.00,"isNew":true, "image":"sneaker_02"},
+        {"id":503, "color":"0xff262D30", "name": "Skecher 3","price":130.00,"isNew":true, "image":"sneaker_03"}
       ]
     }
   ]

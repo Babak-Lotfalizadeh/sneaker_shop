@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:sneaker_shop/view_models/product_model.dart';
+import 'package:sneaker_shop/view_models/brand_model.dart';
 import 'package:sneaker_shop/widgets/more_products_widget.dart';
 import 'package:sneaker_shop/widgets/product_list_widget.dart';
 import 'package:sneaker_shop/widgets/search_filter_widget.dart';
 
 class BrandProductsWidget extends StatelessWidget {
-  final List<ProductModel>? products;
+  final BrandModel? brandModel;
 
   const BrandProductsWidget({
-    required this.products,
+    required this.brandModel,
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    var newProducts =
-        products?.where((element) => element.isNew == true).toList() ?? [];
+    var newProducts = brandModel?.products
+            ?.where((element) => element.isNew == true)
+            .toList() ??
+        [];
 
     return Column(
       children: [
@@ -30,7 +32,7 @@ class BrandProductsWidget extends StatelessWidget {
               Expanded(
                 flex: 8,
                 child: ProductListWidget(
-                  products: products ?? [],
+                  brandModel: brandModel,
                 ),
               ),
             ],
