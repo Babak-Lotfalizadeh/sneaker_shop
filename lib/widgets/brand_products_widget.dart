@@ -52,6 +52,7 @@ class BrandProductsWidget extends StatelessWidget {
           flex: newProducts.isNotEmpty ? 4 : 0,
           child: MoreProductWidget(
             products: newProducts,
+            brandModel: brandModel,
           ),
         ),
       ],

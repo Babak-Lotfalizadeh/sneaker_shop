@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:sneaker_shop/utility/screen_value.dart';
 import 'package:sneaker_shop/utility/utility.dart';
+import 'package:sneaker_shop/view_models/brand_model.dart';
 import 'package:sneaker_shop/view_models/product_model.dart';
 import 'package:sneaker_shop/widgets/new_product_card.dart';
 
 class MoreProductWidget extends StatelessWidget {
+  final BrandModel? brandModel;
   final List<ProductModel> products;
 
   const MoreProductWidget({
     required this.products,
+    required this.brandModel,
     Key? key,
   }) : super(key: key);
 
@@ -55,9 +58,15 @@ class MoreProductWidget extends StatelessWidget {
               Expanded(
                 child: Row(
                   children: [
-                    NewProductCard(productModel: products.first),
+                    NewProductCard(
+                      productModel: products.first,
+                      brandModel: brandModel,
+                    ),
                     const SizedBox(width: ScreenValues.paddingLarge),
-                    NewProductCard(productModel: products.last),
+                    NewProductCard(
+                      productModel: products.last,
+                      brandModel: brandModel,
+                    ),
                   ],
                 ),
               ),
