@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:sneaker_shop/providers/discover_provider.dart';
 import 'package:sneaker_shop/view_models/brand_model.dart';
 import 'package:sneaker_shop/widgets/product_animation_widget.dart';
 
@@ -12,15 +14,16 @@ class ProductListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PageView(
-      controller: PageController(viewportFraction: 0.80),
-      children: brandModel?.products
-              ?.map((element) => ProductAnimationWidget(
-                    brandModel: brandModel,
-                    productModel: element,
-                  ))
-              .toList() ??
-          [],
+    return PageView.builder(
+      controller: context.read<DiscoverProvider>().controller,
+      itemCount: brandModel?.products?.length ?? 0,
+      itemBuilder: (context, index) {
+        return ProductAnimationWidget(
+          index: index,
+          brandModel: brandModel,
+          productModel: brandModel?.products?[index],
+        );
+      },
     );
   }
 }

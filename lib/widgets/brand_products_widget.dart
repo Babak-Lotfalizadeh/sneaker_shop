@@ -23,19 +23,29 @@ class BrandProductsWidget extends StatelessWidget {
       children: [
         Expanded(
           flex: 7,
-          child: Row(
-            children: [
-              const Expanded(
-                flex: 2,
-                child: SearchFilterWidget(),
-              ),
-              Expanded(
-                flex: 8,
-                child: ProductListWidget(
-                  brandModel: brandModel,
-                ),
-              ),
-            ],
+          child: LayoutBuilder(
+            builder: (BuildContext context, BoxConstraints constraints) {
+              return Stack(
+                children: [
+                  SizedBox(
+                    width: constraints.maxWidth,
+                    height: constraints.maxHeight,
+                    child: Row(
+                      children: const [
+                        Expanded(
+                          flex: 3,
+                          child: SearchFilterWidget(),
+                        ),
+                        Expanded(flex: 17, child: SizedBox()),
+                      ],
+                    ),
+                  ),
+                  ProductListWidget(
+                    brandModel: brandModel,
+                  ),
+                ],
+              );
+            },
           ),
         ),
         Expanded(
