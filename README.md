@@ -5,6 +5,10 @@ Flutter Sneaker Shop
 
 ## Video
 ![Untitled video - Made with Clipchamp](https://user-images.githubusercontent.com/7560095/231827776-faa2897c-4ed5-4800-b3e2-ca5e1248c11f.gif)
+### Quality Demo
+<a href="https://youtube.com/shorts/rNw7VSpYbhg
+" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_(2017).svg/1024px-YouTube_full-color_icon_(2017).svg.png" 
+alt="Quality Demo" width="240" height="180" border="10" /></a>
 
 ## Screen shot
 ![Screenshot_1681402555](https://user-images.githubusercontent.com/7560095/231822011-6e2c6d66-e5d2-450b-96c1-7f2c3ed51fb7.png)
